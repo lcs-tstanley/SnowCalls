@@ -21,8 +21,12 @@ class ViewController: UIViewController {
 
     @IBAction func convertNumbers(_ sender: Any) {
     
-        
+        guard let inputNumbers = inputNumbers.text, inputNumbers.count > 0 else {
+            outputNumbers.text = "Please enter some phone numbers."
+            return }
     
+        
+        
     }
     
 
